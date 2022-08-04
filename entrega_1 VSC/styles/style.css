@@ -1,0 +1,132 @@
+.container {
+    display: grid;
+    grid-template-columns: 99%;
+    grid-template-rows: 1fr 1.5fr 0.5fr;
+    grid-template-areas: "head" "main" "footer";
+}
+header {
+   grid-area: head;
+    background-color: red;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Calibri', sans-serif;
+}
+h1{
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    align-self: end;
+}
+header nav{
+    justify-content: flex-end;
+    width: 100%;
+    align-self: end;
+    gap: 20px;
+    font-size: 25px;
+   
+   
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 20px;
+   
+   
+}
+header nav ul li{
+    flex-direction: row;
+   
+   
+   
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    gap: 20px;
+   
+}
+ 
+header img {
+    width: 30%;
+    height: 50%;
+    align-self: center;
+}
+ 
+main {
+   transform: translateY(-100px);
+    grid-area: main;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    font-family: 'Calibri', sans-serif;
+}
+.mainindex {
+    color: blue;
+    font-family: 'Calibri', sans-serif;
+}
+main p{
+    font-size: 20px;
+    font-family: 'Calibri', sans-serif;
+ 
+}
+iframe {
+    display: block;
+    margin: auto;
+}
+ 
+footer {
+    grid-area: footer;
+    background-color: blue;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Calibri', sans-serif;
+}
+ 
+.containermerch {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "head head"
+                         "mainmerch mainmerch"
+                         "mainmerch mainmerch"
+                         "footer footer";
+}
+ 
+.headermerch {
+    height: 80%
+}
+.mainmerch{
+    grid-area: mainmerch;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "camiseta gorras" "cartas pelotas";
+}
+.productos {
+    text-align: center;
+}
+#camiseta{
+    grid-area: camiseta;
+}
+#gorras{
+    grid-area: gorras;
+}
+#cartas {
+    grid-area: cartas;
+}
+#pelotas {
+    grid-area: pelotas;
+}
+ 
+.footermerch {
+    height: 80%;
+}
